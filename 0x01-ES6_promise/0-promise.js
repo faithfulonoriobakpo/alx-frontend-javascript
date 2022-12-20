@@ -1,10 +1,11 @@
 export default function getResponseFromAPI() {
-  const success = true;
-  return new Promise((resolve, reject) => {
-    if (success) {
-      resolve();
-    } else {
-      reject();
-    }
-  });
-}
+    return new Promise((resolve, reject) => {
+      /* eslint-disable */
+      if (true) {
+        resolve();
+      } else {
+        reject();
+      }
+      /* eslint-enable */
+    });
+  }
