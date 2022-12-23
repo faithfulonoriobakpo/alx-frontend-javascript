@@ -3,7 +3,4 @@ class ClassRoom {
     this._maxStudentsSize = maxStudentsSize;
   }
 }
-
-}
-
 export default Classroom;
