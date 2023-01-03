@@ -1,4 +1,3 @@
-export default function setFromArray(input) {
-    if (!Array.isArray(input)) throw new TypeError('input must be an array');
-    return new Set(input);
+export default function setFromArray(arr) {
+  return new Set(arr);
 }
