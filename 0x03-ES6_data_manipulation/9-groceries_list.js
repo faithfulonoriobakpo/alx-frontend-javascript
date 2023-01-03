@@ -1,10 +1,15 @@
 export default function groceriesList() {
-    const items = new Map();
-    items.set('Apples', 10);
-    items.set('Tomatoes', 10);
-    items.set('Pasta', 1);
-    items.set('Rice', 1);
-    items.set('Banana', 5);
-  
-    return items;
+  const toMap = {
+    Apples: 10,
+    Tomatoes: 10,
+    Pasta: 1,
+    Rice: 1,
+    Banana: 5,
+  };
+
+  const map = new Map();
+  Object.entries(toMap).forEach((item) => {
+    map.set(item[0], item[1]);
+  });
+  return map;
 }
